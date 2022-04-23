@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/Faq.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs Page</title>
+    <link rel="stylesheet" href="./index_files/faq1.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="./index_files/font-awesome.min.css">  
+<style>
+    .nav{
+    background-color: black;
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    margin: 0;
+    box-shadow: 5px 5px yellowgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.link{
+    color: beige;
+    padding: 10px;
+    margin: 8px;
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    display: flex;
+}
+a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+form{
+ 
+    text-align: center;
+
+ position: relative;
+    display: grid;
+    width: 100%;
+   
+   padding: 20px;
+    background-color: yellowgreen ;   
+}
+h1{
+    padding: 40px;
+    
+}
+#searching{
+    background-color: white;
+}
+.searchitem
+{
+    width: 45%;
+    border-radius: 26px;
+    height: 45px;
+    text-align: center;
+    border:  3px  ;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: white;
+}
+img{
+    padding: 0px 70px;
+    float: left;
+}
+img:hover{
+    border: none;
+    box-shadow: 0 0 30px red;
+}
+.about{
+    padding: 30px;
+}
+h2{
+    padding: 30px;
+    text-align: center;
+}
+h3{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    padding-left: 400px;
+    text-align: center;
+    font-family: century;
+}
+.btn{
+    background-color: orange;
+    padding: 10px;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellow;
+    box-shadow: 0 0 10px red;
+}
+.box{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: 100% 200%;
+    transition: all .8s;
+    float: left;
+}
+.box:hover{
+    border: none;
+    box-shadow: 0 0 30px red;
+}
+.otherBooks{
+    text-align: center;
+}
+.btn1{
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 30%;
+    overflow: auto;
+    float: left;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: orange;
+}
+#dropdown-content {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: wheat;
+}
+.accordion-button:hover .dropdown-content{
+    display: block;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    background-color: rgb(214, 237, 192);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+.headings {
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.query {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg {
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.foot1 {
+    position: relative;
+    padding: 5px;
+    float: left;
+    left: 10px;
+    margin: 5px;
+    color: white;
+    width: 18%;
+    border-radius: 5px;
+    text-align: center;
+}
+div {
+    display: block;
+}
+.foot{
+    padding: 10px;
+    background-color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: rgb(233, 31, 31);
+    color: white;
+  }
+  .fa-linkedin {
+    background: rgb(31, 31, 191);
+    color: white;
+  }
+ 
+</style>
+</head>
+  
+
+<body>
+    
+    <ul class="nav">
+        <li class="item">
+            <a class="link" aria-current="page" href="http://127.0.0.1:5500/Faq.html#home">Home</a>
+        </li>
+        <li class="item">
+            <a class="link" href="https://en.m.wikipedia.org/wiki/Bhagavad_Gita">About</a>
+        </li>
+        <li class="item">
+            <a class="link" href="http://127.0.0.1:5500/Faq.html#contact">Contact</a>
+        </li>
+        <li class="item">
+            <a class="link" href="http://127.0.0.1:5500/Faq.html#help">Help</a>
+        </li>
+        <li class="item">
+            <a class="link" href="https://m.facebook.com/">Login</a>
+        </li>
+    </ul>
+    
+    <form>
+        <div class="searchbar" id="help">
+            <input type="search" class="searchitem" placeholder="How Can I help?" width="70px"><a href="http://127.0.0.1:5500/www.google.com">
+            <button type="submit" id="searching" class="Searchitem" style="height: 45px; font-size: 16px; border: 3px rgb(230, 220, 220); border-radius: 25px; ">Search</button></a>
+        </div>
+        <div class="heading">
+            <h1>Shrimad Bhagavad Gita </h1>
+        </div>
+    </form>
+    <div class="about">
+        <img src="./index_files/bhagwad gita.jpg" alt="This is an image" width="300px" height="400px">
+        <div class="content">
+        <h2>Shrimad Bhagavad gita Original</h2>
+        <h3>Essence Of Vedas</h3>
+        <h4>Śhrīmad-Bhāgavad is declared to be the essence of all Vedānta philosophy. One who has felt satisfaction from its nectarean mellow will never be attracted to any other literature. – SB 12.13.15</h4>
+        <h3>Importance of Gita</h3>
+        <h4>Srimad Bhagavad Gita teaches you how to handle that knowledge. It not only inculcates in you, the right and unbiased perspective of observing and knowing your own self as well as the entire creation but also teaches you how to handle that knowledge acquired through such observance.</h4>
+        <button class="btn">BOOK NOW</button>
+    </div>
+    </div>
+    <div class="otherBooks">
+        <h1 class="topic">Other Books</h1>
+        <div class="box">
+            <img src="./index_files/srimad bhagwatam.jpg" alt="" width="200px" height="300px">
+            <h2>Srimad Bhagawatam – As It Is</h2>
+   <h3>One may cleanse himself daily by taking a bath in water, but if one takes a bath even once in the sacred Ganges water of Bhagavad-Gita, for him the dirt of material life is altogether vanquished.</h3>
+   <button class="btn1">Buy Now</button>
+        </div>
+        <div class="box">
+            <img src="./index_files/krishna book.jpg" alt="" width="200px" height="300px">
+            <h2>The Krishna Book</h2>
+
+<h3>Get drawn into the story of Krishna's life. Krsna, The Supreme Personality of Godhead tells the story of Krishna's life from Srimad-Bhagavatam,the summit of the Vedas.</h3>
+<button class="btn1">Buy Now</button>
+        </div>
+        <div class="box">
+            <img src="./index_files/chaitanya charitamrita.jpg" alt="" width="200px" height="300px">
+            <h2>Chaitanya Charitamrita</h2>
+
+<h3>“Who is Krishna Chaitanya, and what is His significance?” Sri Chaitanya-charitamrita is the main work on the life and teachings of Sri Chaitanya Mahaprabhu (Krishna Himself).</h3>
+<button class="btn1">Buy Now</button>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="accordion-item">
+        <h2 class="brief">QUESTIONS That Gave Us “Srimad-Bhagavatam”</h2>
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            “What is the ultimate good for humanity?” 
+            <div class="dropdown-content" id="dropdown-button"><h5>SRILA PRABHUPADA SAYS — “Therefore the duty of all devotees is to preach Kṛṣṇa consciousness everywhere all over the world, because all living entities without Kṛṣṇa consciousness are suffering the pangs of material existence. To preach Kṛṣṇa consciousness is the best welfare activity. Indeed, it is described by Śrī Caitanya Mahāprabhu as para-upakāra, work for the true benefit of others.”</h5></div>
+          </button>
+        </h2>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            “What is the essence of all scriptural knowledge?”
+            <div class="dropdown-content" id="dropdown-button"><h5>“Material compassion, lamentation and tears are all signs of ignorance of the real self. Compassion for the eternal soul is self-realisation…No one knows where compassion should be applied. Compassion for the dress of a drowning man is senseless. A man fallen in the ocean of nescience cannot be saved simply by rescuing his outward dress – the gross material body.” </h5></div>
+          </button>
+        </h2>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            “Why did Krishna appear in this world?”
+            <div class="dropdown-content" id="dropdown-button"><h5>Although Krishna says in this verse that He comes only to deliver the pious, to annihilate the miscreants and to re-establish the principles of religion, that is just the external reason of Krishna’s appearance.</h5></div>
+        </button>
+      </h2>
+
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            “What were the activities of each incarnation of the Lord?”
+            <div class="dropdown-content" id="dropdown-button"><h5>The various forms of the Lord descend from the spiritual world to the material world for different purposes, and Krishna is the original source of them all.</h5></div>
+        </button>
+      </h2>
+  </div>
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            “When Krishna departs from the world, where will religious principles be found?”
+            <div class="dropdown-content" id="dropdown-button"><h5>This Bhāgavata Purāṇa is as brilliant as the sun, and it has arisen just after the departure of Lord Kṛṣṇa to His own abode, accompanied by religion, knowledge, etc. Persons who have lost their vision due to the dense darkness of ignorance in the Age of Kali shall get light from this Purāṇa.</h5></div>
+        </button>
+      </h2>
+  </div>
+
+<section id="contact">
+    <h1 class="headings">Enter Your Queries</h1>
+    <div action="" class="query">
+        <input type="text" name="name" class="input" placeholder="Enter Your Name">
+        <input type="text" class="input" placeholder="Date of Birth" onfocus="(this.type=&#39;date&#39;)">
+        <input type="email" name="email" class="input" placeholder="Enter Your Email">
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Add Comment"></textarea>
+        <input type="submit" value="Post Comment" id="send">
+    </div>
+</section>
+<footer class="foot">
+   <div class="foot1"><a href="http://127.0.0.1:5500/Faq.html#"> terms of Use</a></div>
+  <div class="foot1"><a href="http://127.0.0.1:5500/Faq.html#">Privacy</a></div>
+<div class="foot1"><a href="http://127.0.0.1:5500/Faq.html#">cookie Preferences</a></div>
+<div class="foot1"> <a href="http://127.0.0.1:5500/Faq.html#">Corporate Information</a></div>
+<div class="foot1"><a href="http://127.0.0.1:5500/Faq.html#">© 2022 books </a></div>
+</footer>
+<nav class="social-navigation">
+    <!-- Add font awesome icons -->
+<a href="https://m.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://m.twitter.com/" class="fa fa-twitter"></a>
+<a href="https://m.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://m.linkedin.com/" class="fa fa-linkedin"></a>
+</nav>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
